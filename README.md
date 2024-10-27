@@ -56,7 +56,7 @@ Here are the outputs for each derivative type:
 ![First Order](./first order derivative.jpg)
 
 ### Second-Order Derivative (Laplacian)
-![Second Order](./second order derivative.jpg)
+![Second Order](https://github.com/MuhammadZahran26/ImagesDerivations/blob/main/second%20order%20derivative.jpg)
 ## Usage
 
 1. Clone this repository and navigate to the project directory.
