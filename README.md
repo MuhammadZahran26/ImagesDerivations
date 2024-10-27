@@ -18,7 +18,8 @@ This code is implemented without OpenCV and uses custom Python functions to appl
 
 Gaussian smoothing is used to blur the image and reduce noise. This is achieved using the following Gaussian function:
 
-<p align="center"><img src="https://latex.codecogs.com/png.image?\dpi{110}&space;G(x,&space;y,&space;\sigma)&space;=&space;\frac{1}{2&space;\pi&space;\sigma^2}&space;e^{-\frac{x^2&space;&plus;&space;y^2}{2&space;\sigma^2}}" title="Gaussian Function"/></p>
+<p align="center"><img src="https://latex.codecogs.com/png.image?bg=transparent&dpi=110&space;G(x,&space;y,&space;\sigma)&space;=&space;\frac{1}{2&space;\pi&space;\sigma^2}&space;e^{-\frac{x^2&space;&plus;&space;y^2}{2&space;\sigma^2}}" title="Gaussian Function"/></p>
+
 
 where:
 - \( \sigma \) is the standard deviation, controlling the blur amount.
@@ -28,17 +29,19 @@ where:
 
 The gradient magnitude of an image detects edges by calculating the rate of intensity change. Using the Sobel operator, we calculate gradients in the x and y directions as follows:
 
-<p align="center"><img src="https://latex.codecogs.com/png.image?\dpi{110}&space;G_x&space;=&space;\begin{bmatrix}&space;-1&space;&&space;0&space;&&space;1&space;\\&space;-2&space;&&space;0&space;&&space;2&space;\\&space;-1&space;&&space;0&space;&&space;1&space;\end{bmatrix},&space;\quad&space;G_y&space;=&space;\begin{bmatrix}&space;-1&space;&&space;-2&space;&&space;-1&space;\\&space;0&space;&&space;0&space;&&space;0&space;\\&space;1&space;&&space;2&space;&&space;1&space;\end{bmatrix}" title="Sobel Operators"/></p>
+<p align="center"><img src="https://latex.codecogs.com/png.image?bg=transparent&dpi=110&space;G_x&space;=&space;\begin{bmatrix}&space;-1&space;&&space;0&space;&&space;1&space;\\&space;-2&space;&&space;0&space;&&space;2&space;\\&space;-1&space;&&space;0&space;&&space;1&space;\end{bmatrix},&space;\quad&space;G_y&space;=&space;\begin{bmatrix}&space;-1&space;&&space;-2&space;&&space;-1&space;\\&space;0&space;&&space;0&space;&&space;0&space;\\&space;1&space;&&space;2&space;&&space;1&space;\end{bmatrix}" title="Sobel Operators"/></p>
+
 
 The gradient magnitude \( M \) at each pixel is then given by:
 
-<p align="center"><img src="https://latex.codecogs.com/png.image?\dpi{110}&space;M&space;=&space;\sqrt{G_x^2&space;&plus;&space;G_y^2}" title="Gradient Magnitude"/></p>
+<p align="center"><img src="https://latex.codecogs.com/png.image?bg=transparent&dpi=110&space;M&space;=&space;\sqrt{G_x^2&space;&plus;&space;G_y^2}" title="Gradient Magnitude"/></p>
 
 ### 3. Second-Order Derivative (Laplacian)
 
 The Laplacian operator emphasizes areas of rapid intensity change, highlighting edges and corners. The Laplacian kernel is given by:
 
-<p align="center"><img src="https://latex.codecogs.com/png.image?\dpi{110}&space;L&space;=&space;\begin{bmatrix}&space;0&space;&&space;-1&space;&&space;0&space;\\&space;-1&space;&&space;4&space;&&space;-1&space;\\&space;0&space;&&space;-1&space;&&space;0&space;\end{bmatrix}" title="Laplacian Kernel"/></p>
+<p align="center"><img src="https://latex.codecogs.com/png.image?bg=transparent&dpi=110&space;L&space;=&space;\begin{bmatrix}&space;0&space;&&space;-1&space;&&space;0&space;\\&space;-1&space;&&space;4&space;&&space;-1&space;\\&space;0&space;&&space;-1&space;&&space;0&space;\end{bmatrix}" title="Laplacian Kernel"/></p>
+
 
 This operation provides the second-order derivative, highlighting changes in the gradient.
 
