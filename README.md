@@ -50,13 +50,13 @@ This operation provides the second-order derivative, highlighting changes in the
 Here are the outputs for each derivative type:
 
 ### Zero-Order Derivative (Gaussian Smoothing)
-![Zero Order](./zero-order-derivative.jpg)
+![Zero Order](./zero order derivative.jpg)
 
 ### First-Order Derivative (Gradient Magnitude)
-![First Order](./first-order-derivative.jpg)
+![First Order](./first order derivative.jpg)
 
 ### Second-Order Derivative (Laplacian)
-![Second Order](./second-order-derivative.jpg)
+![Second Order](./second order derivative.jpg)
 ## Usage
 
 1. Clone this repository and navigate to the project directory.
