@@ -51,15 +51,15 @@ Here are the outputs for each derivative type:
 
 ### Zero-Order Derivative (Gaussian Smoothing)
 
-![Zero-Order Derivative (Gaussian Smoothing)](zero order derivative.jpg)
+![Zero-Order Derivative (Gaussian Smoothing)]([zero order derivative.jpg](https://github.com/MuhammadZahran26/ImagesDerivations/blob/main/zero%20order%20derivative.jpg))
 
 ### First-Order Derivative (Gradient Magnitude)
 
-![First-Order Derivative (Gradient Magnitude)](first order derivative.jpg)
+![First-Order Derivative (Gradient Magnitude)]([first order derivative.jpg](https://github.com/MuhammadZahran26/ImagesDerivations/blob/main/first%20order%20derivative.jpg))
 
 ### Second-Order Derivative (Laplacian)
 
-![Second-Order Derivative (Laplacian)](second order derivative.jpg)
+![Second-Order Derivative (Laplacian)]([second order derivative.jpg](https://github.com/MuhammadZahran26/ImagesDerivations/blob/main/second%20order%20derivative.jpg))
 
 ## Usage
 
